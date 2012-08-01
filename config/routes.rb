@@ -1,4 +1,6 @@
 RailsJqueryPractice::Application.routes.draw do
+  get "event_list/hide_action"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -48,7 +50,7 @@ RailsJqueryPractice::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+  root :to => 'event_list#index'
 
   # See how all your routes lay out with "rake routes"
 
