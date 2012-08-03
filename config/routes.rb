@@ -1,6 +1,7 @@
 RailsJqueryPractice::Application.routes.draw do
+  get "event_list/toggle_action"
   get "event_list/hide_action"
-
+  get "event_list/onclick_action"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

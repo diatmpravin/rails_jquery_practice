@@ -1,18 +1,1 @@
-<input type="button" value = 'Hide' id = "hide_id" %>
-<p id="message">Hide this sentence</p>
-
-<script>
-  $('document').ready(function(){
-    $("#hide_id").click(function(){
-      var attr_value = $('#hide_id').attr('value');      
-      $("#message").toggle('fast');
-      if(attr_value == 'Hide')
-        {          
-          $('#hide_id').attr('value','Show');
-        }
-        else if(attr_value == 'Show'){          
-          $('#hide_id').attr('value','Hide');
-        }
-    });    
-  });
-</script>
+<p onclick = "$(this).hide();">This is test text should hide</p>
