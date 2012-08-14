@@ -12,4 +12,10 @@ class EventListController < ApplicationController
   def onclick
   end
   
+  def external_script 
+  end
+  
+  def fadeIn
+  end
+  
 end
