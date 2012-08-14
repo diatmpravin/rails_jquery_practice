@@ -18,4 +18,7 @@ class EventListController < ApplicationController
   def fadeIn
   end
   
+  def load
+  end
+  
 end

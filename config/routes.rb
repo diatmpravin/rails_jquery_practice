@@ -4,6 +4,7 @@ RailsJqueryPractice::Application.routes.draw do
   get "event_list/onclick_action"
   get "event_list/external_script"
   get "event_list/fadeIn"
+  get "event_list/load"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
