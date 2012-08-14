@@ -21,4 +21,10 @@ class EventListController < ApplicationController
   def load
   end
   
+  def window_load
+  end
+  
+  def selector_count
+  end
+  
 end

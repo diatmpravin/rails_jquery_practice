@@ -1,0 +1,38 @@
+<div id="div_count">
+  <p>Welcome to HIG</p>
+  <span>This is pravin mishra</span>
+  <%= link_to "Count div element", "#", :id=> 'test' %>
+</div>
+
+<div id="div_count1">
+  <p>Welcome to HIG</p>
+  <span>This is pravin mishra</span>
+  <%= link_to "Count div element", "#", :id=> 'test1' %>
+</div>
+
+<div id="div_count1">
+  <p>Welcome to HIG</p>
+  <span>This is pravin mishra</span>
+  <%= link_to "Count div element", "#", :id=> 'test1' %>
+</div>
+
+<script>
+  $(document).ready(function(){
+    var count = $('*').length;
+    alert("No of all selector in page="+count);
+  });
+  
+  $("#test").click(function(){
+    var div_count = $("#div_count").find("*").length;
+    alert("No of div selector="+div_count);
+  });
+  
+  $("#test1").click(function(){
+    var flag = 0;
+    $("#div_count1").each(function(){
+      flag += 1
+    });
+    alert("No of div selector="+flag);
+  });
+  
+</script>
