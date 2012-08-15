@@ -16,6 +16,7 @@ RailsJqueryPractice::Application.routes.draw do
   get "event_list/submit_a_form"
   get "event_list/submit_a_form_res"
   get "event_list/show_hide_password_in_field"
+  get "event_list/text_area_emotion_icon"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

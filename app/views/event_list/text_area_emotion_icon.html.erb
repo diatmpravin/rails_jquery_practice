@@ -1,0 +1,18 @@
+<p id="commentt">Add comment</p>
+<%= text_area_tag :comment %>
+
+<p>Add emotion icon</p>
+<input type="button" value=":)" />
+<input type="button" value=":(" />
+<input type="button" value=":D" />
+
+<script>
+  $(document).ready(function(){
+    $('input=[type="button"]').click(function(){
+      var comment_val = jQuery.trim($('#comment').attr('value'));
+      var button_val = $(this).val();
+      var sp = (comment_val == '') ? '' : ' ';
+      $('#comment').focus().val(comment_val + sp + button_val+ sp);
+    });    
+  });
+</script>

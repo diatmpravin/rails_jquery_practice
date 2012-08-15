@@ -46,4 +46,7 @@ class EventListController < ApplicationController
   def show_hide_password_in_field
   end
   
+  def text_area_emotion_icon
+  end
+  
 end
