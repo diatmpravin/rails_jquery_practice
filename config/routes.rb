@@ -18,6 +18,8 @@ RailsJqueryPractice::Application.routes.draw do
   get "event_list/show_hide_password_in_field"
   get "event_list/text_area_emotion_icon"
   get "event_list/div_follow_down_screen"
+  get "event_list/multiple_file_upload"
+  post "event_list/multiple_file_upload_res"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

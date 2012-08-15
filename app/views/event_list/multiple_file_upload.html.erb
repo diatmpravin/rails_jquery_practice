@@ -1,0 +1,19 @@
+<%= form_tag event_list_multiple_file_upload_res_path :method => 'post' do %>
+  <p id="file_upload">
+    <%= file_field_tag :file_1 %>
+  </p>
+  <p>
+    <%= submit_tag "Upload" %>
+    <%= link_to "Add more", "#", :id => 'add_more' %>
+  </p>
+<% end %>
+    
+<script>
+  $(document).ready(function(){
+    $('#add_more').click(function(){
+      var file_count = $('input[type="file"]').length;
+      var next_count = file_count+1; 
+      $('#file_upload').prepend('<input type="file" name="file_'+next_count+'">');
+    });
+  });
+</script>  

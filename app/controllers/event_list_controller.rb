@@ -52,4 +52,11 @@ class EventListController < ApplicationController
   def div_follow_down_screen
   end
   
+  def multiple_file_upload
+  end
+  
+  def multiple_file_upload_res
+    raise params.inspect
+  end
+  
 end
