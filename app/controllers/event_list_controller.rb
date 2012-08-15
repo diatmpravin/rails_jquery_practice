@@ -36,4 +36,14 @@ class EventListController < ApplicationController
   def submit_selector    
   end
   
+  def submit_a_form
+  end
+  
+  def submit_a_form_res
+    raise params.inspect
+  end
+  
+  def show_hide_password_in_field
+  end
+  
 end

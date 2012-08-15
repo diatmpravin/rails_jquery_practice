@@ -1,0 +1,23 @@
+<%= form_tag event_list_submit_a_form_res_path, :method => "get" do %>
+  <%= file_field_tag :file %>
+  </br>
+  <%= select_tag :select, options_for_select(['Choose..','Option1','Option2']) %>
+<% end %>
+
+<script>
+  $(document).ready(function(){
+    $('input[type="file"]').change(function(){
+      $(this).parent().submit();
+    });
+    
+    $('#select').change(function(){
+      //alert($(this).val());
+      //alert($(this).attr('value'));
+      var selected_val = $(this).attr('value');
+      if (selected_val != 'Choose..')
+      {
+        $(this).parent().submit();
+      }
+    });
+  });
+</script>
