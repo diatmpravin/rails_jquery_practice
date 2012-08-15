@@ -15,7 +15,7 @@ class EventListController < ApplicationController
   def external_script 
   end
   
-  def fadeIn
+  def fade_in
   end
   
   def load
@@ -25,6 +25,15 @@ class EventListController < ApplicationController
   end
   
   def selector_count
+  end
+  
+  def id_selector
+  end
+  
+  def element_selector
+  end
+  
+  def submit_selector    
   end
   
 end

@@ -3,10 +3,13 @@ RailsJqueryPractice::Application.routes.draw do
   get "event_list/hide_action"
   get "event_list/onclick_action"
   get "event_list/external_script"
-  get "event_list/fadeIn"
+  get "event_list/fade_in"
   get "event_list/load"
   get "event_list/window_load"
   get "event_list/selector_count"
+  get "event_list/id_selector"
+  get "event_list/element_selector"
+  get "event_list/submit_selector"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
