@@ -49,4 +49,7 @@ class EventListController < ApplicationController
   def text_area_emotion_icon
   end
   
+  def div_follow_down_screen
+  end
+  
 end
