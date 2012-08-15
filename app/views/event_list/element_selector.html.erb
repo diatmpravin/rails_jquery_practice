@@ -1,0 +1,19 @@
+<p>first parg</p>
+<p>second parg</p>
+
+<div>div</div>
+
+<span>first span</span>
+<span>second span</span>
+
+<script>
+  $(document).ready(function(){
+    $('p:first').text('Hello');
+    $('p:last').append(' Hello2');
+    
+    $('div').append(' Happy to see you');
+    
+    $('span:first').hide();
+    $('span:last').fadeIn(1000);
+  });
+</script>

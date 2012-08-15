@@ -1,0 +1,15 @@
+<input type="submit" value="Submit"/>
+<input type="submit" value="Reset"/>
+<input type="button" value="Register"/>
+
+<script>
+  $(document).ready(function(){
+    $(':button').click(function(){
+      alert("Thanks")
+    });
+    
+    $(':submit').click(function(){
+      $(this).attr('value', 'Please wait')
+    });
+  });
+</script>

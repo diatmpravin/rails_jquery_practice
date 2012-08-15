@@ -1,0 +1,13 @@
+<p id="text">this is p text</p>
+<%= text_field_tag :name, 'Hello', :id => 'name' %>
+<%= link_to "Click me", '#', :id => 'click_me'  %>
+
+<script>
+  $(document).ready(function(){
+    alert($('#text').text());
+    alert($('#name').val());
+    $('#click_me').click(function(){
+      alert("Thanks")
+    });
+  });
+</script>
