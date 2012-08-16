@@ -59,4 +59,17 @@ class EventListController < ApplicationController
     raise params.inspect
   end
   
+  def user_online
+  end
+  
+  def join_list
+    Address.create(:name => params[:user_name])
+  end
+  
+  def get_list
+    @address = Address.all.first
+    #raise @address.name.inspect
+    return @address.name
+  end
+  
 end

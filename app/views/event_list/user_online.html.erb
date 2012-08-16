@@ -1,0 +1,26 @@
+<%= link_to "Come online", "#", :id => "come_online" %>
+
+<div id="user_list"></div>
+
+<script>
+  $(document).ready(function(){
+    $("#come_online").click(function(){
+      var user_name = prompt("Please enter name");
+      
+      $.post(
+        "/event_list/join_list",
+        {user_name: user_name}
+      );
+    });
+    
+    setInterval(function(){
+      $.post(
+        "/event_list/get_list",
+        function(data){
+         console.log(data); 
+         $('#user_list').html(data); 
+        }
+      );
+    }, 500);
+  });
+</script>

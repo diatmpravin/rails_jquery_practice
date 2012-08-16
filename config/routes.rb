@@ -1,4 +1,6 @@
 RailsJqueryPractice::Application.routes.draw do
+  resources :addresses
+
   get "event_list/toggle_action"
   get "event_list/hide_action"
   get "event_list/onclick_action"
@@ -20,10 +22,10 @@ RailsJqueryPractice::Application.routes.draw do
   get "event_list/div_follow_down_screen"
   get "event_list/multiple_file_upload"
   post "event_list/multiple_file_upload_res"
-  # The priority is based upon order of creation:
-  # first created -> highest priority.
-
-  # Sample of regular route:
+  get "event_list/user_online"
+  post "event_list/join_list"
+  post "event_list/get_list"
+  # Sample of regular route
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
 
